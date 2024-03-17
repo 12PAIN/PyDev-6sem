@@ -1,0 +1,21 @@
+form.login_form {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 450px;
+    background-color: #ffd1b3;
+    border: 0.5px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+
+h1{
+    text-align: center;
+    color: #ff6600;
+}
+
+h2{
+    color: #ffd1b3;
+}
+
