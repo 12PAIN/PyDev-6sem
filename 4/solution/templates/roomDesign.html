@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Оформление каюты</h2>
+
+    {% if sex in ["male", "female"] and age > 0 and age <= 110 %}
+
+        {% if age < 21 %}
+            {% set imgFilename = sex + 'below21.png' %}
+        {% elif age == 21 %}
+            {% set imgFilename = sex + '21.png' %}
+        {% else %}
+            {% set imgFilename = sex + 'above21.png' %}
+        {% endif %}
+
+        <table>
+            <thead>
+                <tr>
+                    <td>Цвет стен</td>
+                    <td>Эмблема</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="background-color: {% if sex == 'male' %}blue{% else %}pink{% endif %}"></td>
+                    <td style="background-color: {% if sex == 'male' %}blue{% else %}pink{% endif %}">
+                        <img class="maxWidth600" src="{{url_for('roomsEmblems.static', filename=imgFilename)}}" alt="Не удалось загрузить картинку!">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    {% else %}
+        <h4>ОШИБКА!!!</h4>
+    {% endif %}
+
+{% endblock %}

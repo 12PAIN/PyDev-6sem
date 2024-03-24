@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Иван",
+    "last_name": "Иванов",
+    "photo": "1.png",
+    "professions": ["пилот", "навигатор"]
+  },
+  {
+    "name": "Алексей",
+    "last_name": "Смирнов",
+    "photo": "2.png",
+    "professions": ["инженер", "техник"]
+  },
+  {
+    "name": "Елена",
+    "last_name": "Петрова",
+    "photo": "3.png",
+    "professions": ["врач", "медик"]
+  },
+  {
+    "name": "Анна",
+    "last_name": "Сидорова",
+    "photo": "4.png",
+    "professions": ["коммуникатор", "переводчик"]
+  },
+  {
+    "name": "Михаил",
+    "last_name": "Козлов",
+    "photo": "5.png",
+    "professions": ["инженер", "электрик"]
+  },
+  {
+    "name": "Ольга",
+    "last_name": "Новикова",
+    "photo": "6.png",
+    "professions": ["бортпроводник", "стюардесса"]
+  },
+  {
+    "name": "Дмитрий",
+    "last_name": "Морозов",
+    "photo": "7.png",
+    "professions": ["пилот", "инструктор"]
+  },
+  {
+    "name": "Евгений",
+    "last_name": "Васильев",
+    "photo": "8.png",
+    "professions": ["механик", "техник"]
+  },
+  {
+    "name": "Наталья",
+    "last_name": "Ковалева",
+    "photo": "9.png",
+    "professions": ["навигатор", "командир"]
+  },
+  {
+    "name": "Сергей",
+    "last_name": "Федоров",
+    "photo": "10.png",
+    "professions": ["инженер", "электроник"]
+  }
+]

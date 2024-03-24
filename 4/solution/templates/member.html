@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    {% if number is not none and number >= 1 and number <= members|length %}
+        {% set member = members[number-1] %}
+    {% elif number is none %}
+        {% set member = members | random %}
+    {% else %}
+        <h4>Ошибка!!!</h4>
+    {% endif %}
+
+    {% if (number is not none and number >= 1 and number <= members|length) or number is none %}
+        <h2>Член экипажа {% if number is not none %}№{{number}}{% endif %} {{member.name}} {{member.last_name}}</h2>
+
+        <h3>Профессии:</h3>
+        <ul>
+            {% for prof in member.professions %}
+                <li>{{prof}}</li>
+            {% endfor %}
+        </ul>
+
+        <h4>Фото:</h4>
+        <img class="maxWidth600" src="{{url_for('members.static', filename='photo/' + member.photo)}}" alt="Не получилось загрузить изображение!">
+    {% endif %}
+
+
+
+
+
+
+
+{% endblock %}

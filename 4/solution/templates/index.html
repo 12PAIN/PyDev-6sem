@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Добро пожаловать!</h2>
+    {% for page in pages %}
+        <br><a href="{{page.route}}">{{page.title}}</a>
+    {% endfor %}
+{% endblock %}
