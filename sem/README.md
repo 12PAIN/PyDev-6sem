@@ -5,19 +5,20 @@
 
 ## Демонстрация работы
 Swagger
-[](https://imgur.com/u3Z5u8U)
+![](https://imgur.com/u3Z5u8U)
 
 Главная
-[](https://imgur.com/6nXG5oo)
+![](https://imgur.com/6nXG5oo)
 
 Профиль
-[](https://imgur.com/ctM6bnR)
+![](https://imgur.com/ctM6bnR)
 
 Список загрузок
-[](https://imgur.com/223Awpb)
+![](https://imgur.com/223Awpb)
 
 Результаты
-[](https://imgur.com/U0LdBbf)
+![](https://imgur.com/U0LdBbf)
+
 ## Технологии
 
 В проекте применены следующие технологии:
