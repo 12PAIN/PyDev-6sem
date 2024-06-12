@@ -1,0 +1,49 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:12-alpine
+    container_name: fastapiapp_demodb
+    restart: always
+    environment:
+      - POSTGRES_DB=$POSTGRES_DB
+      - POSTGRES_USER=$POSTGRES_USER
+      - POSTGRES_PASSWORD=$POSTGRES_PASSWORD
+    networks:
+      - fastapiappnetwork
+
+  backend:
+    build: ./backend
+    container_name: fastapiapp_demoapp
+    ports:
+      - 5000:8000
+    volumes:
+      - ./backend:/home
+    depends_on:
+      - db
+    networks:
+      - fastapiappnetwork
+    environment:
+      - POSTGRES_DB=$POSTGRES_DB
+      - POSTGRES_USER=$POSTGRES_USER
+      - POSTGRES_HOST=$POSTGRES_HOST
+      - POSTGRES_PORT=$POSTGRES_PORT
+      - POSTGRES_PASSWORD=$POSTGRES_PASSWORD
+      - SECRET_KEY=$SECRET_KEY
+
+  frontend:
+    build: ./frontend
+    container_name: vue_app
+    depends_on:
+      - backend
+    volumes:
+      - './frontend:/app'
+      - '/app/node_modules'
+    ports:
+      - 8080:8080
+    networks:
+      - fastapiappnetwork
+
+
+networks:
+  fastapiappnetwork:

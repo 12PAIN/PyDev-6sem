@@ -1,0 +1,42 @@
+form {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 450px;
+    background-color: #ffd1b3;
+    border: 0.5px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+input, select, textarea{
+    width: 100%;
+}
+
+.error {
+    color: red;
+}
+
+table, tr, td {
+    border: 1px solid;
+}
+
+td{
+    padding: 5px 5px 5px 5px;
+}
+
+h1, h4{
+    text-align: center;
+    color: #ff6600;
+}
+
+h4{
+    padding-left: 20px;
+}
+
+h2{
+    color: #ffd1b3;
+}
+
+img.maxWidth600 {
+    max-width: 600px;
+}
