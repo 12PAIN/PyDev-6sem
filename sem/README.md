@@ -5,7 +5,7 @@
 
 ## Демонстрация работы
 Swagger
-![](https://imgur.com/u3Z5u8U)
+![](https://i.imgur.com/u3Z5u8U.png)
 
 Главная
 ![](https://imgur.com/6nXG5oo)
