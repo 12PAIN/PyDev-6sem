@@ -8,16 +8,16 @@ Swagger
 ![](https://i.imgur.com/u3Z5u8U.png)
 
 Главная
-![](https://imgur.com/6nXG5oo)
+![](https://i.imgur.com/6nXG5oo.png)
 
 Профиль
-![](https://imgur.com/ctM6bnR)
+![](https://i.imgur.com/ctM6bnR.png)
 
 Список загрузок
-![](https://imgur.com/223Awpb)
+![](https://i.imgur.com/223Awpb.png)
 
 Результаты
-![](https://imgur.com/U0LdBbf)
+![](https://i.imgur.com/U0LdBbf.png)
 
 ## Технологии
 
